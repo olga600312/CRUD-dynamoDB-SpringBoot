@@ -22,6 +22,10 @@ public class ProductServiceImpl implements ProductServiceBL {
         this.dynamoDBMapper = dynamoDBMapper;
     }
 
+    /**
+     * Get whole list of products
+     * @return product list
+     */
     @Override
     public List<ProductDTO> getAllProducts() {
         DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
