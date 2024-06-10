@@ -34,7 +34,7 @@ public class ProductServiceImpl implements ProductServiceBL {
     }
 
     /**
-     * Fetch aproduct by its ID
+     * Fetch a product by its ID
      * @param id Product id
      * @return product dto
      */
