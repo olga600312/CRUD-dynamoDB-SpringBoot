@@ -33,6 +33,11 @@ public class ProductServiceImpl implements ProductServiceBL {
         return products.stream().map(this::convertToDTO).collect(Collectors.toList());
     }
 
+    /**
+     * Fetch aproduct by its ID
+     * @param id Product id
+     * @return product dto
+     */
     @Override
     public ProductDTO getProductById(String id) {
         Product product = dynamoDBMapper.load(Product.class, id);
