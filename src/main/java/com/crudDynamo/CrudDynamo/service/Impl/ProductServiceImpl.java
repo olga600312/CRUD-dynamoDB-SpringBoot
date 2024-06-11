@@ -44,6 +44,11 @@ public class ProductServiceImpl implements ProductServiceBL {
         return convertToDTO(product);
     }
 
+    /**
+     * Create a new product
+     * @param dto product dto
+     * @return new created product dto
+     */
     @Override
     public ProductDTO createNewProduct(ProductDTO dto) {
         Product product = new Product();
